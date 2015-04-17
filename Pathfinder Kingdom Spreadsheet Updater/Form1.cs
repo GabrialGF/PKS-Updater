@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-
 
 
 namespace Pathfinder_Kingdom_Spreadsheet_Updater
@@ -31,6 +29,20 @@ namespace Pathfinder_Kingdom_Spreadsheet_Updater
 
         private void buttonSF_Click(object sender, EventArgs e)
         {
+            OpenFileDialog oFileDiag1 = new OpenFileDialog();
+
+            oFileDiag1.Filter = "Excel Files (*.xls;*.xlsx)|*.xls;*.xlsx|All Files (*.*)|*.*";
+            oFileDiag1.FilterIndex = 1;
+            oFileDiag1.RestoreDirectory = true;
+            oFileDiag1.CheckFileExists = false;
+            oFileDiag1.AutoUpgradeEnabled = true;
+            oFileDiag1.Multiselect = false;
+
+            if (oFileDiag1.ShowDialog() == DialogResult.OK)
+            {
+            }
+            oFile = oFileDiag1.FileName;
+            OpenFileTextBox.Text = oFile;
 
         }
 
@@ -51,5 +63,12 @@ namespace Pathfinder_Kingdom_Spreadsheet_Updater
             oFile = oFileDiag1.FileName;
             OpenFileTextBox.Text = oFile;
         }
+
+        private void buttonCon_Click(object sender, EventArgs e)
+        {
+            Conversion.Initialize(oFile, dFile);
+        }
+
+       
     }
 }

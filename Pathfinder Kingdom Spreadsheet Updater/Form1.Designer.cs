@@ -33,6 +33,7 @@
             this.buttonSF = new System.Windows.Forms.Button();
             this.SaveFileTextBox = new System.Windows.Forms.TextBox();
             this.buttonCon = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // OpenFileTextBox
@@ -73,18 +74,27 @@
             // 
             // buttonCon
             // 
-            this.buttonCon.Location = new System.Drawing.Point(119, 226);
+            this.buttonCon.Location = new System.Drawing.Point(150, 226);
             this.buttonCon.Name = "buttonCon";
             this.buttonCon.Size = new System.Drawing.Size(176, 23);
             this.buttonCon.TabIndex = 4;
             this.buttonCon.Text = "CONVERT TO VERSION 5.4o";
             this.buttonCon.UseVisualStyleBackColor = true;
+            this.buttonCon.Click += new System.EventHandler(this.buttonCon_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 186);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(452, 23);
+            this.progressBar1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 261);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.buttonCon);
             this.Controls.Add(this.SaveFileTextBox);
             this.Controls.Add(this.buttonSF);
@@ -105,6 +115,7 @@
         private System.Windows.Forms.Button buttonSF;
         private System.Windows.Forms.TextBox SaveFileTextBox;
         private System.Windows.Forms.Button buttonCon;
+        private System.Windows.Forms.ProgressBar progressBar1;
 
     }
 }

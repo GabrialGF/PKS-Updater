@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinder Kingdom Spreadsheet Updater", "Pathfinder Kingdom Spreadsheet Updater\Pathfinder Kingdom Spreadsheet Updater.csproj", "{FC701D03-6628-4342-8708-256C9013BEC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84989ED2-78AD-4BDE-B44D-69B5E4DCA71A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
